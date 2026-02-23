@@ -9,7 +9,6 @@ from selene import browser, by, have
 @allure.label("owner", "Evgeniy Chechelev")
 @allure.title("Проверка названия Issue #1 в репозитории")
 @allure.description("Ищем репозиторий, переходим в Issues и проверяем заголовок Issue")
-@allure.dynamic.link("https://github.com", name="Testing")
 def test_lambda():
 	with allure.step('Открываем GitHub'):
 		browser.open('https://github.com/')
